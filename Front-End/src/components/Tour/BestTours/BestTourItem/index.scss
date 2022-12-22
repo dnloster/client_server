@@ -1,0 +1,134 @@
+.tour-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .card-image {
+        position: relative;
+        overflow: hidden;
+
+        .tour-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                // transform: scale(1.1);
+            }
+        }
+    }
+
+    .card-content {
+        padding-left: 0.75rem; /* 12px */
+        padding-right: 0.75rem; /* 12px */
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+
+        .card-top {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1;
+
+            .time-remaining {
+                font-size: 1rem; /* 16px */
+                line-height: 1.5rem; /* 24px */
+
+                span {
+                    display: flex;
+                    align-items: center;
+
+                    .ant-statistic-content {
+                        font-size: 1rem; /* 16px */
+                        line-height: 1.5rem; /* 24px */
+                    }
+                }
+            }
+
+            .card-title {
+                font-size: 1.125rem; /* 18px */
+                font-weight: bold;
+                line-height: 1.25rem; /* 20px */
+                color: #1da57a;
+                cursor: pointer;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                &:hover {
+                    color: #4d4aef;
+                }
+            }
+        }
+
+        .card-bottom {
+            margin-top: auto;
+            flex-shrink: 0;
+
+            .departure-place {
+                margin-top: 0.75rem;
+            }
+
+            .old-price {
+                margin-top: 0.5rem;
+                span {
+                    text-decoration: line-through;
+                }
+            }
+
+            .sale-price {
+                display: flex;
+                justify-content: space-between;
+
+                span:first-child {
+                    font-weight: bold;
+                    color: #fd5056;
+                    font-size: 1.125rem; /* 18px */
+                    line-height: 1.75rem; /* 28px */
+                }
+
+                span:last-child {
+                    background-color: #fd5056;
+                    padding: 0.25rem;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 11px;
+                    border-radius: 5px;
+                    line-height: 1.25rem;
+                }
+            }
+
+            .rate {
+                margin-top: 0.75rem;
+            }
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 0.75rem; /* 12px */
+            padding-bottom: 0.75rem; /* 12px */
+            background-color: #fff;
+
+            .time-travel {
+                font-size: 0.875rem; /* 14px */
+                line-height: 1.25rem; /* 20px */
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .testimonials {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .testi-wrapper {
+            color: #fff;
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top: 3rem;
+            .swiper-slide {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                }
+                .ant-rate {
+                    height: 40px;
+                    margin-top: 24px;
+                }
+                p.text-base {
+                    padding-top: 12px;
+                    font-size: 16px;
+                    font-style: italic;
+                }
+                p.text-lg {
+                    padding-top: 12px;
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
